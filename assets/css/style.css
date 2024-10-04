@@ -45,7 +45,7 @@ CSS INDEX
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Playfair Display", serif;
     background: #fff;
     overflow-x: hidden;
 }
@@ -254,6 +254,7 @@ figure img {
     Start Section Header CSS
 ====================================================================
  ***/
+
 .section-header > h2 {
     font-size: 45px;
     font-weight: 700;
@@ -1016,6 +1017,76 @@ figure img {
     Start Service Secion CSS
 ====================================================================
  ***/
+
+ .service-box {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #337ab7, #66d9ef);
+  }
+  
+  .service-box {
+    animation: hoverAnimation 0.5s;
+  }
+  
+  @keyframes hoverAnimation {
+    0% {
+      transform: translateY(0);
+      background-color: #fff;
+    }
+    100% {
+      transform: translateY(-10px);
+      background-color: #f7f7f7;
+    }
+  }
+
+  .service-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-box {
+    animation: hoverAnimation 0.5s;
+  }
+  
+  @keyframes hoverAnimation {
+    0% {
+      transform: translateY(0);
+      background-color: #fff;
+    }
+    100% {
+      transform: translateY(-10px);
+      background-color: #f7f7f7;
+    }
+  }
+
+  
+
 .service-section {
     padding: 143px 0 150px;
 }
